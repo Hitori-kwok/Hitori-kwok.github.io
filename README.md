@@ -35,8 +35,8 @@ School of Automation and Electrical Engineering, Shenyang Ligong University, She
 
 - **C#**, Familiar
 - **Unity**,Familiar
- -**Unity Shader**,Learning
- -**AssetBundle**,Learning
+ - **Unity Shader**,Learning
+ - **AssetBundle**,Learning
 - **Lua**, Learning
  
 
