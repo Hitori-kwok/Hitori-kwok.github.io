@@ -46,7 +46,6 @@ School of Automation and Electrical Engineering, Shenyang Ligong University, She
 - **Markdown**, Familiar
 - **SVN**, Familiar
 - **VSCode**, Familiar
-- **VS**, Familiar
 - **Visual Studio**, Familiar
 - **PhotoShop**, Familiar
 
