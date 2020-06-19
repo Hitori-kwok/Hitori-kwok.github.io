@@ -1,3 +1,4 @@
+<meta name="baidu-site-verification" content="P4FgjctIlw" />
 # Hitori的博客
 
 欢迎访问我的个人主页！下面向你介绍一下我自己吧~
