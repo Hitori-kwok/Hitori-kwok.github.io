@@ -71,7 +71,7 @@
 <p>若我们创建的是一个maven工程，是可以帮我们自动生成统一、标准的项目目录结构：</p>
 <p><img src="/../images/Maven/image-20221130220539444.png" alt="image-20221130220539444"></p>
 <p>具体的统一结构如下：</p>
-<img src="../images/Maven/image-20221130140132209.png" alt="image-20221130140132209" style="zoom:80%;" />
+<img src="../images/Maven/image-20221130140132209.png" alt="image-20221130140132209" style="zoom:80%;">
 
 <blockquote>
 <p>目录说明： </p>
@@ -86,7 +86,7 @@
 <ul>
 <li>maven提供了标准的、跨平台(Linux、Windows、MacOS) 的自动化项目构建方式</li>
 </ul>
-<img src="../images/Maven/image-20221130140247524.png" alt="image-20221130140247524" style="zoom:67%;" />
+<img src="../images/Maven/image-20221130140247524.png" alt="image-20221130140247524" style="zoom:67%;">
 
 <p>如上图所示我们开发了一套系统，代码需要进行编译、测试、打包、发布，这些操作如果需要反复进行就显得特别麻烦，而Maven提供了一套简单的命令来完成项目构建。</p>
 <p><img src="/../images/Maven/image-20221130222907628.png" alt="image-20221130222907628"></p>
@@ -169,9 +169,9 @@
 <p><img src="/../images/Maven/image-20221130231857537.png" alt="image-20221130231857537"> </p>
 <p>2.2、进入到conf目录下修改settings.xml配置文件 </p>
 <p>1). 使用超级记事本软件，打开settings.xml文件，定位到53行</p>
-<p>2). 复制<localRepository>标签，粘贴到注释的外面（55行）</p>
-<p>3). 复制之前新建的用来存储jar包的路径，替换掉<localRepository>标签体内容</p>
-<img src="../images/Maven/2.gif" style="zoom:80%;" />
+<p>2). 复制<localRepository>标签，粘贴到注释的外面（55行）</localRepository></p>
+<p>3). 复制之前新建的用来存储jar包的路径，替换掉<localRepository>标签体内容</localRepository></p>
+<img src="../images/Maven/2.gif" style="zoom:80%;">
 
 
 
@@ -179,13 +179,13 @@
 <p>由于中央仓库在国外，所以下载jar包速度可能比较慢，而阿里公司提供了一个远程仓库，里面基本也都有开源项目的jar包。</p>
 <p>进入到conf目录下修改settings.xml配置文件：</p>
 <p>1). 使用超级记事本软件，打开settings.xml文件，定位到160行左右</p>
-<p>2). 在<mirrors>标签下为其添加子标签<mirror>，内容如下：</p>
+<p>2). 在<mirrors>标签下为其添加子标签<mirror>，内容如下：</mirror></mirrors></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>          </span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p><img src="/../images/Maven/3.gif"></p>
 <p>注意配置的位置，在<mirrors> … </mirrors> 中间添加配置。如下图所示：</p>
 <p><img src="/../images/Maven/image-20221130161346565.png" alt="image-20221130161346565"></p>
-<p>&#x3D;&#x3D;注:  只可配置一个<mirror>(另一个要注释!) ，不然两个可能发生冲突，导致jar包无法下载!!!!!!!&#x3D;&#x3D;</p>
+<p>&#x3D;&#x3D;注:  只可配置一个<mirror>(另一个要注释!) ，不然两个可能发生冲突，导致jar包无法下载!!!!!!!&#x3D;&#x3D;</mirror></p>
 <p><strong>4、配置环境变量</strong></p>
 <blockquote>
 <p>Maven环境变量的配置类似于JDK环境变量配置一样</p>
@@ -194,7 +194,7 @@
 <ul>
 <li>MAVEN_HOME环境变量的值，设置为maven的解压安装目录</li>
 </ul>
-<img src="../images/Maven/image-20220616102344350.png" style="zoom:80%;" />
+<img src="../images/Maven/image-20220616102344350.png" style="zoom:80%;">
 
 
 
@@ -202,7 +202,7 @@
 <ul>
 <li>PATH环境变量的值，设置为：%MAVEN_HOME%\bin</li>
 </ul>
-<img src="../images/Maven/image-20220616102435856.png" style="zoom:80%;" /> 
+<img src="../images/Maven/image-20220616102435856.png" style="zoom:80%;"> 
 
 
 
@@ -231,44 +231,44 @@
 <ul>
 <li>选择 IDEA中 File  &#x3D;&gt;  close project</li>
 </ul>
-<img src="../images/Maven/4.gif" style="zoom:80%;" />
+<img src="../images/Maven/4.gif" style="zoom:80%;">
 
-<img src="../images/Maven/image-20220616104338612.png" style="zoom:80%;" />
+<img src="../images/Maven/image-20220616104338612.png" style="zoom:80%;">
 
 
 
 <p>2、打开 All settings , 选择 Build,Execution,Deployment  &#x3D;&gt;  Build Tools  &#x3D;&gt;  Maven</p>
-<img src="../images/Maven/image-20220616104517726.png" style="zoom:80%;" />
+<img src="../images/Maven/image-20220616104517726.png" style="zoom:80%;">
 
 
 
 <p>3、配置工程的编译版本为11</p>
-<img src="../images/Maven/image-20221201093737128.png" alt="image-20221201093737128" style="zoom:80%;" />
+<img src="../images/Maven/image-20221201093737128.png" alt="image-20221201093737128" style="zoom:80%;">
 
 <p>这里所设置的maven的环境信息，并未指定任何一个project，此时设置的信息就属于全局配置信息。 以后，我们再创建project，默认就是使用我们全局配置的信息。</p>
 <h3 id="3-2-Maven项目"><a href="#3-2-Maven项目" class="headerlink" title="3.2 Maven项目"></a>3.2 Maven项目</h3><h4 id="3-2-1-创建Maven项目"><a href="#3-2-1-创建Maven项目" class="headerlink" title="3.2.1 创建Maven项目"></a>3.2.1 创建Maven项目</h4><p>1、创建一个空项目 </p>
-<img src="../images/Maven/image-20221201095621738.png" alt="image-20221201095621738" style="zoom:80%;" />
+<img src="../images/Maven/image-20221201095621738.png" alt="image-20221201095621738" style="zoom:80%;">
 
-<img src="../images/Maven/image-20221201095600057.png" alt="image-20221201095600057" style="zoom:80%;" />
+<img src="../images/Maven/image-20221201095600057.png" alt="image-20221201095600057" style="zoom:80%;">
 
 
 
 <p>2、创建模块，选择Maven，点击Next</p>
-<img src="../images/Maven/image-20221201095831320.png" alt="image-20221201095831320" style="zoom:80%;" />
+<img src="../images/Maven/image-20221201095831320.png" alt="image-20221201095831320" style="zoom:80%;">
 
-<img src="../images/Maven/image-20221201100011799.png" alt="image-20221201100011799" style="zoom:80%;" />
+<img src="../images/Maven/image-20221201100011799.png" alt="image-20221201100011799" style="zoom:80%;">
 
 
 
 <p>3、填写模块名称，坐标信息，点击finish，创建完成</p>
-<img src="../images/Maven/image-20221201100502234.png" alt="image-20221201100502234" style="zoom:80%;" /> 
+<img src="../images/Maven/image-20221201100502234.png" alt="image-20221201100502234" style="zoom:80%;"> 
 
 
 
 <p>4、在Maven工程下，创建HelloWorld类</p>
-<img src="../images/Maven/image-20221201101603397.png" alt="image-20221201101603397" style="zoom:80%;" />
+<img src="../images/Maven/image-20221201101603397.png" alt="image-20221201101603397" style="zoom:80%;">
 
-<img src="../images/Maven/image-20221201101643427.png" alt="image-20221201101643427" style="zoom:80%;" />
+<img src="../images/Maven/image-20221201101643427.png" alt="image-20221201101643427" style="zoom:80%;">
 
 <blockquote>
 <ul>
@@ -293,16 +293,16 @@
 
 <p>pom文件详解：</p>
 <ul>
-<li><project> ：pom文件的根标签，表示当前maven项目</li>
+<li><project> ：pom文件的根标签，表示当前maven项目</project></li>
 <li><modelVersion> ：声明项目描述遵循哪一个POM模型版本<ul>
 <li>虽然模型本身的版本很少改变，但它仍然是必不可少的。目前POM模型版本是4.0.0</li>
 </ul>
-</li>
+</modelVersion></li>
 <li>坐标 ：<groupId>、<artifactId>、<version><ul>
 <li>定位项目在本地仓库中的位置，由以上三个标签组成一个坐标</li>
 </ul>
-</li>
-<li><packaging> ：maven项目的打包方式，通常设置为jar或war（默认值：jar）</li>
+</version></artifactId></groupId></li>
+<li><packaging> ：maven项目的打包方式，通常设置为jar或war（默认值：jar）</packaging></li>
 </ul>
 <h4 id="3-2-3-Maven坐标详解"><a href="#3-2-3-Maven坐标详解" class="headerlink" title="3.2.3 Maven坐标详解"></a>3.2.3 Maven坐标详解</h4><p>什么是坐标？</p>
 <ul>
@@ -329,7 +329,7 @@
 </ul>
 <p>打开IDEA，选择右侧Maven面板，点击 + 号，选中对应项目的pom.xml文件，双击即可</p>
 <p><img src="/../images/Maven/image-20221201104320521.png" alt="image-20221201104320521"></p>
-<img src="../images/Maven/image-20221201104906754.png" alt="image-20221201104906754" style="zoom:80%;" /> 
+<img src="../images/Maven/image-20221201104906754.png" alt="image-20221201104906754" style="zoom:80%;"> 
 
 <blockquote>
 <p>说明：如果没有Maven面板，选择 View  &#x3D;&gt;  Appearance  &#x3D;&gt;  Tool Window Bars</p>
@@ -339,11 +339,11 @@
 <li><strong>方式2：使用idea导入模块项目</strong></li>
 </ul>
 <p>File  &#x3D;&gt;  Project Structure  &#x3D;&gt;  Modules  &#x3D;&gt;  +  &#x3D;&gt;  Import Module</p>
-<img src="../images/Maven/image-20220823161727718.png" style="zoom:80%;" />
+<img src="../images/Maven/image-20220823161727718.png" style="zoom:80%;">
 
 <p>找到要导入工程的pom.xml</p>
 <p><img src="/../images/Maven/image-20221201105532909.png" alt="image-20221201105532909"></p>
-<img src="../images/Maven/image-20221201105845872.png" alt="image-20221201105845872" style="zoom:80%;" />
+<img src="../images/Maven/image-20221201105845872.png" alt="image-20221201105845872" style="zoom:80%;">
 
 
 
@@ -354,9 +354,9 @@
 <h2 id="04-依赖管理"><a href="#04-依赖管理" class="headerlink" title="04. 依赖管理"></a>04. 依赖管理</h2><h3 id="4-1-依赖配置"><a href="#4-1-依赖配置" class="headerlink" title="4.1 依赖配置"></a>4.1 依赖配置</h3><p>依赖：指当前项目运行所需要的jar包。一个项目中可以引入多个依赖：</p>
 <p>例如：在当前工程中，我们需要用到logback来记录日志，此时就可以在maven工程的pom.xml文件中，引入logback的依赖。具体步骤如下：</p>
 <ol>
-<li><p>在pom.xml中编写<dependencies>标签</p>
+<li><p>在pom.xml中编写<dependencies>标签</dependencies></p>
 </li>
-<li><p>在<dependencies>标签中使用<dependency>引入坐标</p>
+<li><p>在<dependencies>标签中使用<dependency>引入坐标</dependency></dependencies></p>
 </li>
 <li><p>定义坐标的 groupId、artifactId、version</p>
 </li>
@@ -380,17 +380,17 @@
 <p><strong>添加依赖的几种方式：</strong></p>
 <ol>
 <li><p>利用中央仓库搜索的依赖坐标</p>
-<img src="../images/Maven/5.gif" style="zoom:80%;" />
+<img src="../images/Maven/5.gif" style="zoom:80%;">
 
 
 </li>
 <li><p>利用IDEA工具搜索依赖</p>
-<img src="../images/Maven/6.gif" style="zoom:80%;" />
+<img src="../images/Maven/6.gif" style="zoom:80%;">
 
 
 </li>
 <li><p>熟练上手maven后，快速导入依赖</p>
-<img src="../images/Maven/7.gif" style="zoom:80%;" /></li>
+<img src="../images/Maven/7.gif" style="zoom:80%;"></li>
 </ol>
 <h3 id="4-2-依赖传递"><a href="#4-2-依赖传递" class="headerlink" title="4.2 依赖传递"></a>4.2 依赖传递</h3><h4 id="4-2-1-依赖具有传递性"><a href="#4-2-1-依赖具有传递性" class="headerlink" title="4.2.1 依赖具有传递性"></a>4.2.1 依赖具有传递性</h4><p>早期我们没有使用maven时，向项目中添加依赖的jar包，需要把所有的jar包都复制到项目工程下。如下图所示，需要logback-classic时，由于logback-classic又依赖了logback-core和slf4j，所以必须把这3个jar包全部复制到项目工程下</p>
 <p><img src="/../images/Maven/image-20221201120514644.png" alt="image-20221201120514644"></p>
@@ -432,7 +432,7 @@
 <p><img src="/../images/Maven/image-20221201142501556.png" alt="image-20221201142501556"></p>
 <h3 id="4-3-依赖范围"><a href="#4-3-依赖范围" class="headerlink" title="4.3 依赖范围"></a>4.3 依赖范围</h3><p>在项目中导入依赖的jar包后，默认情况下，可以在任何地方使用。</p>
 <p><img src="/../images/Maven/image-20221201135142706.png" alt="image-20221201135142706"></p>
-<p>如果希望限制依赖的使用范围，可以通过<scope>标签设置其作用范围。</p>
+<p>如果希望限制依赖的使用范围，可以通过<scope>标签设置其作用范围。</scope></p>
 <p><img src="/../images/Maven/image-20220616123806894.png" alt="image-20220616123806894"> </p>
 <p>作用范围：</p>
 <ol>
